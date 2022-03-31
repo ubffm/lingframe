@@ -1,0 +1,28 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> . 
+
+<http://data.linguistik.de/datamodel/profile> 
+  a prof:Profile ;
+  rdfs:label "Lingframe Application Profile" ;
+  rdfs:comment "The Lingframe Application profile details the usage of BIBFRAME in the context of the Lin|gu|is|tik portal."""@en ;
+  dct:publisher <http://data.linguistik.de> ;
+  prof:isProfileOf <http://id.loc.gov/ontologies/bibframe/> ;
+
+  prof:hasResource [
+    a prof:ResourceDescriptor ;
+    dct:format <https://w3id.org/mediatype/text/markdown> ;
+    prof:hasRole role:guidance ;
+    prof:hasArtifact <http://data.linguistik.de/datamodel/>
+  ] ;
+
+  prof:hasResource [
+    a prof:ResourceDescriptor ;
+    dct:format <https://w3id.org/mediatype/application/vnd.oasis.opendocument.spreadsheet> ;
+    prof:hasRole role:mapping ;
+    prof:hasArtifact <http://data.linguistik.de/datamodel/>
+  ] ;
+
+  prof:hasToken "lingframe".

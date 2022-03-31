@@ -1,0 +1,12 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bfle: <http://data.linguistik.de/bibframe-lf-extensions> .
+@prefix bllo: <https://data.linguistik.de/bll/bll-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bfbe:ClassificationBll a               owl:Class;
+                       rdfs:subClassOf bf:Classification,
+                                       bllo:BLLConcept;
+                       skos:definition "BLL Classification for use with BIBFRAME";
+                       rdfs:label      "BLL Classification".
