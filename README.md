@@ -1,6 +1,6 @@
 # Lin|gu|is|tik BIBFRAME Application Profile
-This repository contains information about the way the FID Linguistik
-uses BIBFRAME as well as some extensions.
+This repository contains information about the way the [FID Linguistik](https://data.linguistik.de)
+uses [BIBFRAME](https://www.loc.gov/bibframe/) as well as some extensions.
 
 All content in this repository is to be considered as a snapshot of
 the work in progress.
@@ -8,8 +8,9 @@ the work in progress.
 ## Contents
 
 * Description of the data model (prose)
-* Lingframe Exentsion vocabulary
+* Lingframe Extension vocabulary
 * A formal profile
+* A PICA+-to-BIBFRAME Mapping.
 
 ## Licence
 
