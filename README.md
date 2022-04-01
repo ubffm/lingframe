@@ -15,7 +15,8 @@ All content in this repository is to be considered as a snapshot of the work in 
 
 ## Licence
 
-All parts of this project are copyrighted by the University Library JCS, Frankfurt a. M. The data is licensed under a Creative Commons Attribution 4.0 License.
+All parts of this project are copyrighted by the University Library JCS, Frankfurt a. M. and are
+licensed under a Creative Commons Attribution 4.0 License.
 
 ## Acknowledgement  
 This is a project created and maintained by the [Specialised Information Service for Linguistics](https://www.linguistik.de/en/)
