@@ -1,12 +1,19 @@
-@prefix bf:   <http://id.loc.gov/ontologies/bibframe/> .
-@prefix bfle: <http://data.linguistik.de/bibframe-lingframe-extensions#> .
-@prefix bllo: <https://data.linguistik.de/bll/bll-ontology#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bf:      <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bfle:    <http://data.linguistik.de/bibframe-lingframe-extensions#> .
+@prefix bllo:    <https://data.linguistik.de/bll/bll-ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
-bfbe:ClassificationBll a               owl:Class;
+
+<http://data.linguistik.de/bibframe-lingframe-extensions#> 
+                       dcterms:title "BIBFRAME Lingframe Extensions";  
+                       dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+bfle:ClassificationBll a               owl:Class ;
                        rdfs:subClassOf bf:Classification,
-                                       bllo:BLLConcept;
-                       skos:definition "BLL Classification for use with BIBFRAME";
-                       rdfs:label      "BLL Classification".
+                                       bllo:BLLConcept ;
+                       skos:definition "BLL Classification for use with BIBFRAME" ;
+                       rdfs:label      "BLL Classification" .
