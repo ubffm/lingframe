@@ -79,7 +79,8 @@ This may change in the future.
 Language tags are at the moment only used with `rdfs:label` for `bf:Topic` and `bf:GenreForm`.
 In these cases, they are uniformly set to `de`.
 
-Datatypes for literals are currently not employed.
+Datatypes for literals are currently only used with literals that are objects of `bf:creationDate`.
+In these cases, they are unisormly set do `xsd:date`.
 
 
 ## 3. Included Elements
