@@ -1,4 +1,4 @@
-# Lingtrame BIBFRAME Application Profile
+# Lingframe BIBFRAME Application Profile
 This repository contains information about the way the [FID Linguistik](https://data.linguistik.de)
 uses [BIBFRAME](https://www.loc.gov/bibframe/) as well as some extensions. Most importantly, it
 contains information about the BIBFRAME application profile – "Lingframe" – which has been defined
@@ -8,7 +8,7 @@ All content in this repository is to be considered as a snapshot of the work in 
 
 ## Contents
 
-* Document: ["Guide to the Lingframe BIBFRAME Application Profile for FID Linguistik"](lingframe-guide.md)"
+* Document: ["Guide to the Lingframe BIBFRAME Application Profile for FID Linguistik"](lingframe-guide.md)
 * Vocabulary: [Lingframe Extension vocabulary](bibframe-linguistik-extensions.ttl)
 * [prof profile](https://www.w3.org/TR/dx-prof/): [profile.ttl](profile.ttl)
 * Mapping (ODS Spreadsheet): [PICA+-to-BIBFRAME Mapping](pica_to_bibframe.ods)
