@@ -1,12 +1,13 @@
-# BIBFRAME Application Profile for FID Linguistik
+# Guide to the Lingframe BIBFRAME Application Profile for FID Linguistik
 
 This document describes how the [BIBFRAME 2.0](https://www.loc.gov/bibframe/) data model is
 adapted and used by the [Lin|gu|is|tik](https://linguistik.de) portal, for both internal
-purposes as well as data dumps and exports. It describes the elements
+purposes as well as data dumps and exports. For convenience, we refer to
+this application profile as "Lingframe". This guides lists the elements
 of BIBFRAME used, outlines the specific conventions pertaining to their
 use, as well as which elements are not part of the application profile (AP).
 
-This document is to be considered as a `living documentation` and will
+This document is to be considered as a "living documentation" and will
 therefore be adapted or modified to reflect changes made to the data model
 which become necessary during its continuous development.
 
