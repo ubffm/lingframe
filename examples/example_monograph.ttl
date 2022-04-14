@@ -1,0 +1,175 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bfle: <http://data.linguistik.de/bll/bibframe-lingframe-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+### The monograph 
+<http://data.linguistik.de/records/019046235#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2006-03-09"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "019046235" ] ] ;
+    bf:classification <http://data.linguistik.de/records/133073343>,
+        <http://data.linguistik.de/records/133073491>,
+        <http://data.linguistik.de/records/13311452X>,
+        <http://data.linguistik.de/records/133116549> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/216274702> ;
+            bf:qualifier "primary" ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/019046235#Instance> ;
+    bf:hasSeries <http://data.linguistik.de/records/003011445> ;
+    bf:subject <http://data.linguistik.de/records/085782122>,
+        <http://data.linguistik.de/records/085782130> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Morphology" ;
+            bf:subtitle "a study of the relation between meaning and form" ] .
+
+<http://data.linguistik.de/records/019046235#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "XII, 234 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/019046235#Item> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "0-915027-37-2" ],
+        [ a bf:Isbn ;
+            rdf:value "90-272-2877-9" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "12051705" ],
+        [ a bf:Isbn ;
+            rdf:value "90-272-2878-7" ],
+        [ a bf:Isbn ;
+            rdf:value "0-915027-38-0" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/019046235#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Literaturverz. S. 217 - 229" ;
+            bf:noteType "046M" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Benjamins" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Amsterdam {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1985" ] ;
+    bf:responsibilityStatement "Joan L. Bybee" .
+
+<http://data.linguistik.de/records/019046235#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/129368261> ;
+    bf:itemOf <http://data.linguistik.de/records/019046235#Instance> .
+
+### The referenced sreies
+<http://data.linguistik.de/records/003011445#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2006-03-15"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "003011445" ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#series>,
+        <http://data.linguistik.de/records/085562742>,
+        <http://data.linguistik.de/records/085858323> ;
+    bf:hasInstance <http://data.linguistik.de/records/003011445#Instance> ;
+    bf:subject <http://data.linguistik.de/records/085132446>,
+        <http://data.linguistik.de/records/085166200>,
+        <http://data.linguistik.de/records/088928764> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Typological studies in language" ;
+            bf:subtitle "(TSL)" ] .
+
+<http://data.linguistik.de/records/003011445#Instance> a bf:Instance,
+        bf:Print ;
+    bf:hasItem <http://data.linguistik.de/records/003011445#Item> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "zdb" ] ;
+            rdf:value "625760-4s" ],
+        [ a bf:Issn ;
+            rdf:value "0167-7373" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "10388792" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/003011445#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/serl> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "1.1982 -" ;
+            bf:noteType "Ersch." ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Benjamins" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Amsterdam {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1982" ] .
+
+<http://data.linguistik.de/records/003011445#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/003011445#Instance> .
+
+
+# Authority record stumps
+
+<http://data.linguistik.de/records/085132446> a bf:Topic ;
+    rdfs:label "Prosa"@de .
+
+<http://data.linguistik.de/records/085166200> a bf:Topic ;
+    rdfs:label "Thema-Rhema-Gliederung"@de .
+
+<http://data.linguistik.de/records/085562742> a bf:GenreForm ;
+    rdfs:label "Aufsatzsammlung"@de .
+
+<http://data.linguistik.de/records/085782122> a bf:Topic ;
+    rdfs:label "Morphologie <Linguistik>"@de .
+
+<http://data.linguistik.de/records/085782130> a bf:Topic ;
+    rdfs:label "Morphonologie"@de .
+
+<http://data.linguistik.de/records/085858323> a bf:GenreForm ;
+    rdfs:label "Monografische Reihe"@de .
+
+<http://data.linguistik.de/records/088928764> a bf:Topic ;
+    rdfs:label "Topikalisierung"@de .
+
+<http://data.linguistik.de/records/129368261> a bf:Organization ;
+    rdfs:label "Frankfurt, Bibliographie Linguistischer Literatur" .
+
+<http://data.linguistik.de/records/133073343> a bfle:ClassificationBll ;
+    rdfs:label "Morphophonologie"@de ;
+    bf:classificationPortion "04.02.43" .
+
+<http://data.linguistik.de/records/133073491> a bfle:ClassificationBll ;
+    rdfs:label "Theorie"@de ;
+    bf:classificationPortion "04.04.05.001" ;
+    bf:qualifier "Wortbildung" .
+
+<http://data.linguistik.de/records/13311452X> a bfle:ClassificationBll ;
+    rdfs:label "Markiertheit"@de ;
+    bf:classificationPortion "04.04.01.010" ;
+    bf:qualifier "morph." .
+
+<http://data.linguistik.de/records/133116549> a bfle:ClassificationBll ;
+    rdfs:label "Natürliche Generative Phonologie"@de ;
+    bf:classificationPortion "04.02.01.015" .
+
+<http://data.linguistik.de/records/216274702> a bf:Person ;
+    rdfs:label "Bybee, Joan L." ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "13935509X" ] .
