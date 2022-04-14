@@ -4,7 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
 ### The monograph 
 <http://data.linguistik.de/records/019046235#Work> a bf:Text,
         bf:Work ;
@@ -69,7 +68,8 @@
     bf:heldBy <http://data.linguistik.de/records/129368261> ;
     bf:itemOf <http://data.linguistik.de/records/019046235#Instance> .
 
-### The referenced sreies
+
+### The referenced series
 <http://data.linguistik.de/records/003011445#Work> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
@@ -123,8 +123,7 @@
     bf:itemOf <http://data.linguistik.de/records/003011445#Instance> .
 
 
-# Authority record stumps
-
+### Authority record stumps
 <http://data.linguistik.de/records/085132446> a bf:Topic ;
     rdfs:label "Prosa"@de .
 
@@ -146,9 +145,6 @@
 <http://data.linguistik.de/records/088928764> a bf:Topic ;
     rdfs:label "Topikalisierung"@de .
 
-<http://data.linguistik.de/records/129368261> a bf:Organization ;
-    rdfs:label "Frankfurt, Bibliographie Linguistischer Literatur" .
-
 <http://data.linguistik.de/records/133073343> a bfle:ClassificationBll ;
     rdfs:label "Morphophonologie"@de ;
     bf:classificationPortion "04.02.43" .
@@ -166,6 +162,9 @@
 <http://data.linguistik.de/records/133116549> a bfle:ClassificationBll ;
     rdfs:label "Natürliche Generative Phonologie"@de ;
     bf:classificationPortion "04.02.01.015" .
+
+<http://data.linguistik.de/records/129368261> a bf:Organization ;
+    rdfs:label "Frankfurt, Bibliographie Linguistischer Literatur" .
 
 <http://data.linguistik.de/records/216274702> a bf:Person ;
     rdfs:label "Bybee, Joan L." ;
