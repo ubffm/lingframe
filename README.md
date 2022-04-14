@@ -11,7 +11,7 @@ All content in this repository is to be considered as a snapshot of the work in 
 * Document: ["Guide to the Lingframe BIBFRAME Application Profile for FID Linguistik"](lingframe-guide.md)
 * Vocabulary: [Lingframe Extension vocabulary](bibframe-linguistik-extensions.ttl)
 * [prof profile](https://www.w3.org/TR/dx-prof/): [profile.ttl](profile.ttl)
-* Mapping (ODS Spreadsheet): [PICA+-to-BIBFRAME Mapping](pica_to_bibframe.ods)
+* Mapping (ODS Spreadsheet): Preliminary partial [PICA+-to-BIBFRAME Mapping](pica_to_bibframe.ods)
 
 ## Licence
 

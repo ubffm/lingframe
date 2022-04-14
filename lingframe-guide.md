@@ -86,12 +86,14 @@ In these cases, they are unisormly set do `xsd:date`.
 
 ## 3. Included Elements
 ### 3.1 Classes
+* AbbreviatedTitle
 * AdminMetadata
 * Agent
 * Audio
 * Classification
 * CollectiveTitle
 * Contribution
+* Dataset
 * Dissertation
 * Doi
 * Electronic
