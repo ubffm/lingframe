@@ -174,7 +174,7 @@ In these cases, they are unisormly set do `xsd:date`.
 
 ## BLL subject terms
 
-In order to use [BLL subject terms](https://data.linguistik.de/bll/bll-ontology/),
+In order to use [BLL subject terms](https://data.linguistik.de/bll/bll-ontology),
 the following approach is used. A subclass `bfle:ClassificationBll` of `bf:Classification` is definied to
 easily allow using BLL terms with BIBFRAME.
 
