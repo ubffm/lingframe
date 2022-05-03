@@ -174,7 +174,7 @@ In these cases, they are unisormly set do `xsd:date`.
 
 ## BLL subject terms
 
-In order to use [https://data.linguistik.de/bll/bll-ontology/](BLL subject terms),
+In order to use [BLL subject terms](https://data.linguistik.de/bll/bll-ontology/),
 the following approach is used. A subclass `bfle:ClassificationBll` of `bf:Classification` is definied to
 easily allow using BLL terms with BIBFRAME.
 
@@ -189,8 +189,8 @@ easily allow using BLL terms with BIBFRAME.
  
 bfbe:ClassificationBll a               owl:Class;
                        rdfs:subClassOf bf:Classification;
-                       skos:definition """BLL Classification for use with BIBFRAME""";
-                       rdfs:label      """BLL Classification""" .
+                       skos:definition "BLL Classification for use with BIBFRAME";
+                       rdfs:label      "BLL Classification" .
  
 bllt:BLLConcept        rdfs:subClassOf bfbe:ClassificationBll .
  
