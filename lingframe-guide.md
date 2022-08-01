@@ -100,12 +100,14 @@ In these cases, they are unisormly set do `xsd:date`.
 * [Extent](https://id.loc.gov/ontologies/bibframe/Extent)
 * [GenerationProcess](https://id.loc.gov/ontologies/bibframe/GenerationProcess)
 * [GenreForm](https://id.loc.gov/ontologies/bibframe/GenreForm)
+* [_Hdl_](https://id.loc.gov/ontologies/bibframe/Hdl)
 * [Instance](https://id.loc.gov/ontologies/bibframe/Instance)
 * [Isbn](https://id.loc.gov/ontologies/bibframe/Isbn)
 * [Issn](https://id.loc.gov/ontologies/bibframe/Issn)
 * [Item](https://id.loc.gov/ontologies/bibframe/Item)
 * [Lccn](https://id.loc.gov/ontologies/bibframe/Lccn)
 * [Local](https://id.loc.gov/ontologies/bibframe/Local)
+* [_Manuscript_](https://id.loc.gov/ontologies/bibframe/Manuscript)
 * [MixedMaterial](https://id.loc.gov/ontologies/bibframe/MixedMaterial)
 * [Multimedia](https://id.loc.gov/ontologies/bibframe/Multimedia)
 * [Nbn](https://id.loc.gov/ontologies/bibframe/Nbn)
@@ -171,6 +173,10 @@ In these cases, they are unisormly set do `xsd:date`.
 * [subtitle](https://id.loc.gov/ontologies/bibframe/subtitle)
 * [supplementaryContent](https://id.loc.gov/ontologies/bibframe/supplementaryContent)
 * [title](https://id.loc.gov/ontologies/bibframe/title)
+
+Items that are printed in _italics_ are included provisionally,
+as they are likely to occur in the source data at some point,
+but do not yet.
 
 ## BLL subject terms
 
