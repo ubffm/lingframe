@@ -1,79 +1,82 @@
+# This example includes a monograph + the series it belongs to.
+# Also, linked authority records are included, most of them being stubs.
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bfle: <http://data.linguistik.de/bll/bibframe-lingframe-extensions#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-### The monograph 
-<http://data.linguistik.de/records/019046235#Work> a bf:Text,
+### Monograph
+
+<http://data.linguistik.de/records/1922#Work> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:creationDate "2006-03-09"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner [ a bf:Organization ;
                             rdfs:label "HeBIS" ] ;
                     rdf:value "019046235" ] ] ;
-    bf:classification <http://data.linguistik.de/records/133073343>,
-        <http://data.linguistik.de/records/133073491>,
-        <http://data.linguistik.de/records/13311452X>,
-        <http://data.linguistik.de/records/133116549> ;
+    bf:classification <http://data.linguistik.de/records/4>,
+        <http://data.linguistik.de/records/5>,
+        <http://data.linguistik.de/records/6>,
+        <http://data.linguistik.de/records/7> ;
     bf:contribution [ a bf:Contribution ;
-            bf:agent <http://data.linguistik.de/records/216274702> ;
+            bf:agent <http://data.linguistik.de/records/8> ;
             bf:qualifier "primary" ] ;
     bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
-    bf:hasInstance <http://data.linguistik.de/records/019046235#Instance> ;
-    bf:hasSeries <http://data.linguistik.de/records/003011445> ;
-    bf:subject <http://data.linguistik.de/records/085782122>,
-        <http://data.linguistik.de/records/085782130> ;
+    bf:hasInstance <http://data.linguistik.de/records/1922#Instance> ;
+    bf:hasSeries <http://data.linguistik.de/records/1916> ;
+    bf:subject <http://data.linguistik.de/records/1>,
+        <http://data.linguistik.de/records/3> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Morphology" ;
             bf:subtitle "a study of the relation between meaning and form" ] .
-
-<http://data.linguistik.de/records/019046235#Instance> a bf:Instance,
+            
+<http://data.linguistik.de/records/1922#Instance> a bf:Instance,
         bf:Print ;
     bf:extent [ a bf:Extent ;
             rdfs:label "XII, 234 S." ] ;
-    bf:hasItem <http://data.linguistik.de/records/019046235#Item> ;
+    bf:hasItem <http://data.linguistik.de/records/1922#Item> ;
     bf:identifiedBy [ a bf:Isbn ;
-            rdf:value "0-915027-37-2" ],
-        [ a bf:Isbn ;
             rdf:value "90-272-2877-9" ],
+        [ a bf:Isbn ;
+            rdf:value "90-272-2878-7" ],
+        [ a bf:Isbn ;
+            rdf:value "0-915027-38-0" ],
         [ a bf:Local ;
             bf:source [ a bf:Source ;
                     rdfs:label "oclc" ] ;
             rdf:value "12051705" ],
         [ a bf:Isbn ;
-            rdf:value "90-272-2878-7" ],
-        [ a bf:Isbn ;
-            rdf:value "0-915027-38-0" ] ;
-    bf:instanceOf <http://data.linguistik.de/records/019046235#Work> ;
-    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+            rdf:value "0-915027-37-2" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1922#Work> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 217 - 229" ;
             bf:noteType "046M" ] ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
+            bf:date "1985" ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "Benjamins" ] ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Amsterdam {[u.a.]" ] ],
-        [ a bf:ProvisionActivity,
-                bf:Publication ;
-            bf:date "1985" ] ;
+                    rdfs:label "Amsterdam {[u.a.]" ] ] ;
     bf:responsibilityStatement "Joan L. Bybee" .
+    
+<http://data.linguistik.de/records/1922#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/10> ;
+    bf:itemOf <http://data.linguistik.de/records/1922#Instance> .
 
-<http://data.linguistik.de/records/019046235#Item> a bf:Item ;
-    bf:heldBy <http://data.linguistik.de/records/129368261> ;
-    bf:itemOf <http://data.linguistik.de/records/019046235#Instance> .
-
-
-### The referenced series
-<http://data.linguistik.de/records/003011445#Work> a bf:Text,
+### Linked series
+<http://data.linguistik.de/records/1916#Work> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:creationDate "2006-03-15"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
             bf:identifiedBy [ a bf:Local ;
@@ -81,94 +84,186 @@
                             rdfs:label "HeBIS" ] ;
                     rdf:value "003011445" ] ] ;
     bf:genreForm <http://data.linguistik.de/lingframe-genreterms#series>,
-        <http://data.linguistik.de/records/085562742>,
-        <http://data.linguistik.de/records/085858323> ;
-    bf:hasInstance <http://data.linguistik.de/records/003011445#Instance> ;
-    bf:subject <http://data.linguistik.de/records/085132446>,
-        <http://data.linguistik.de/records/085166200>,
-        <http://data.linguistik.de/records/088928764> ;
+        <http://data.linguistik.de/records/1920>,
+        <http://data.linguistik.de/records/1921> ;
+    bf:hasInstance <http://data.linguistik.de/records/1916#Instance> ;
+    bf:subject <http://data.linguistik.de/records/1917>,
+        <http://data.linguistik.de/records/1918>,
+        <http://data.linguistik.de/records/1919> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Typological studies in language" ;
             bf:subtitle "(TSL)" ] .
 
-<http://data.linguistik.de/records/003011445#Instance> a bf:Instance,
+<http://data.linguistik.de/records/1916#Instance> a bf:Instance,
         bf:Print ;
-    bf:hasItem <http://data.linguistik.de/records/003011445#Item> ;
-    bf:identifiedBy [ a bf:Local ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "zdb" ] ;
-            rdf:value "625760-4s" ],
-        [ a bf:Issn ;
+    bf:hasItem <http://data.linguistik.de/records/1916#Item> ;
+    bf:identifiedBy [ a bf:Issn ;
             rdf:value "0167-7373" ],
         [ a bf:Local ;
             bf:source [ a bf:Source ;
                     rdfs:label "oclc" ] ;
-            rdf:value "10388792" ] ;
-    bf:instanceOf <http://data.linguistik.de/records/003011445#Work> ;
-    bf:issuance <http://id.loc.gov/vocabulary/issuance/serl> ;
+            rdf:value "10388792" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "zdb" ] ;
+            rdf:value "625760-4s" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1916#Work> ;
     bf:note [ a bf:Note ;
             rdfs:label "1.1982 -" ;
             bf:noteType "Ersch." ] ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
+            bf:date "1982" ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "Benjamins" ] ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Amsterdam {[u.a.]" ] ],
-        [ a bf:ProvisionActivity,
-                bf:Publication ;
-            bf:date "1982" ] .
+                    rdfs:label "Amsterdam {[u.a.]" ] ] .
 
-<http://data.linguistik.de/records/003011445#Item> a bf:Item ;
-    bf:itemOf <http://data.linguistik.de/records/003011445#Instance> .
+<http://data.linguistik.de/records/1916#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/1916#Instance> .
 
+### Authorities
 
-### Authority record stumps
-<http://data.linguistik.de/records/085132446> a bf:Topic ;
-    rdfs:label "Prosa"@de .
-
-<http://data.linguistik.de/records/085166200> a bf:Topic ;
-    rdfs:label "Thema-Rhema-Gliederung"@de .
-
-<http://data.linguistik.de/records/085562742> a bf:GenreForm ;
-    rdfs:label "Aufsatzsammlung"@de .
-
-<http://data.linguistik.de/records/085782122> a bf:Topic ;
-    rdfs:label "Morphologie <Linguistik>"@de .
-
-<http://data.linguistik.de/records/085782130> a bf:Topic ;
-    rdfs:label "Morphonologie"@de .
-
-<http://data.linguistik.de/records/085858323> a bf:GenreForm ;
-    rdfs:label "Monografische Reihe"@de .
-
-<http://data.linguistik.de/records/088928764> a bf:Topic ;
-    rdfs:label "Topikalisierung"@de .
-
-<http://data.linguistik.de/records/133073343> a bfle:ClassificationBll ;
-    rdfs:label "Morphophonologie"@de ;
-    bf:classificationPortion "04.02.43" .
-
-<http://data.linguistik.de/records/133073491> a bfle:ClassificationBll ;
-    rdfs:label "Theorie"@de ;
-    bf:classificationPortion "04.04.05.001" ;
-    bf:qualifier "Wortbildung" .
-
-<http://data.linguistik.de/records/13311452X> a bfle:ClassificationBll ;
-    rdfs:label "Markiertheit"@de ;
-    bf:classificationPortion "04.04.01.010" ;
-    bf:qualifier "morph." .
-
-<http://data.linguistik.de/records/133116549> a bfle:ClassificationBll ;
-    rdfs:label "Natürliche Generative Phonologie"@de ;
-    bf:classificationPortion "04.02.01.015" .
-
-<http://data.linguistik.de/records/129368261> a bf:Organization ;
-    rdfs:label "Frankfurt, Bibliographie Linguistischer Literatur" .
-
-<http://data.linguistik.de/records/216274702> a bf:Person ;
+<http://data.linguistik.de/records/8> a bf:Person ;
     rdfs:label "Bybee, Joan L." ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "216274702" ] ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
                     rdfs:label "gnd" ] ;
             rdf:value "13935509X" ] .
+
+<http://data.linguistik.de/records/3> a bf:Topic ;
+    rdfs:label "Morphonologie",
+        "Morphonologie"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "085782130" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "4170561-0" ] .
+
+<http://data.linguistik.de/records/4> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Morphophonologie"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133073343" ] ] ;
+    bf:classificationPortion "04.02.43" .
+
+<http://data.linguistik.de/records/5> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Theorie"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133073491" ] ] ;
+    bf:classificationPortion "04.04.05.001" ;
+    bf:qualifier "Wortbildung" .
+
+<http://data.linguistik.de/records/6> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Markiertheit"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "13311452X" ] ] ;
+    bf:classificationPortion "04.04.01.010" ;
+    bf:qualifier "morph." .
+
+<http://data.linguistik.de/records/7> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Natürliche Generative Phonologie"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133116549" ] ] ;
+    bf:classificationPortion "04.02.01.015" .
+
+<http://data.linguistik.de/records/9> a bf:Classification ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "407874437" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "rvk" ] ;
+            rdf:value "27970:" ] .
+
+<http://data.linguistik.de/records/1> a bf:Topic ;
+    rdfs:label "Morphologie",
+        "Morphologie <Linguistik>"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "085782122" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "4170560-9" ] .
+
+<http://data.linguistik.de/records/1917> a bf:Topic ;
+    rdfs:label "Topikalisierung"@de .
+
+<http://data.linguistik.de/records/1918> a bf:Topic ;
+    rdfs:label "Thema-Rhema-Gliederung"@de .
+
+<http://data.linguistik.de/records/1919> a bf:Topic ;
+    rdfs:label "Prosa"@de .
+
+<http://data.linguistik.de/records/1920> a bf:GenreForm ;
+    rdfs:label "Monografische Reihe"@de .
+
+<http://data.linguistik.de/records/1921> a bf:GenreForm ;
+    rdfs:label "Aufsatzsammlung"@de .
+
+<http://data.linguistik.de/records/10> a bf:Organization ;
+    rdfs:label "Bibliographie Linguistischer Literatur",
+        "Frankfurt, Bibliographie Linguistischer Literatur" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "129368261" ] ] .
