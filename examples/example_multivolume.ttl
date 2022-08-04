@@ -1,0 +1,441 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.linguistik.de/records/1941> a bf:Topic ;
+    rdfs:label "Sprachtypologie",
+        "Sprachtypologie"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "08515721X" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "4056503-8" ] .
+
+<http://data.linguistik.de/records/1942> a bf:Topic ;
+    rdfs:label "Kontrastive Grammatik",
+        "Kontrastive Grammatik"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "085207527" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "4073706-8" ] .
+
+<http://data.linguistik.de/records/1943> a bf:Topic ;
+    rdfs:label "Kontrastive Syntax",
+        "Kontrastive Syntax"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "085207543" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "4073711-1" ] .
+
+<http://data.linguistik.de/records/1945#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/1945#Instance> .
+
+<http://data.linguistik.de/records/1945#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2008-04-16"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "058783318" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Hrsg." ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1945#Instance> ;
+    bf:subject <http://data.linguistik.de/records/1941>,
+        <http://data.linguistik.de/records/1942>,
+        <http://data.linguistik.de/records/1943> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Language typology and syntactic description" ] .
+
+<http://data.linguistik.de/records/1946#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/10> ;
+    bf:itemOf <http://data.linguistik.de/records/1946#Instance> .
+
+<http://data.linguistik.de/records/1946#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2006-03-09"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "058783458" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Hrsg." ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1946#Instance> ;
+    bf:partOf <http://data.linguistik.de/records/1945> ;
+    bf:title [ a bf:CollectiveTitle ;
+            bf:mainTitle "Language typology and syntactic description" ;
+            bf:partNumber "1" ],
+        [ a bf:Title ;
+            bf:mainTitle "Clause structure" ] .
+
+<http://data.linguistik.de/records/1947#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/10> ;
+    bf:itemOf <http://data.linguistik.de/records/1947#Instance> .
+
+<http://data.linguistik.de/records/1947#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2006-03-09"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "058783539" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Hrsg." ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1947#Instance> ;
+    bf:partOf <http://data.linguistik.de/records/1945> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Complex constructions" ],
+        [ a bf:CollectiveTitle ;
+            bf:mainTitle "Language typology and syntactic description" ;
+            bf:partNumber "2" ] .
+
+<http://data.linguistik.de/records/1948#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/10> ;
+    bf:itemOf <http://data.linguistik.de/records/1948#Instance> .
+
+<http://data.linguistik.de/records/1948#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2006-03-09"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "05878358X" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1948#Instance> ;
+    bf:partOf <http://data.linguistik.de/records/1945> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Grammatical categories and the lexicon" ],
+        [ a bf:CollectiveTitle ;
+            bf:mainTitle "Language typology and syntactic description" ;
+            bf:partNumber "3" ] .
+
+<http://data.linguistik.de/records/1949#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/1949#Instance> .
+
+<http://data.linguistik.de/records/1949#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "188086765" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Hrsg." ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1949#Instance> ;
+    bf:partOf <http://data.linguistik.de/records/1945> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Clause structure" ],
+        [ a bf:CollectiveTitle ;
+            bf:mainTitle "Language typology and syntactic description" ;
+            bf:partNumber "1" ] .
+
+<http://data.linguistik.de/records/1950#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/1950#Instance> .
+
+<http://data.linguistik.de/records/1950#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "188086897" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Hrsg." ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1950#Instance> ;
+    bf:partOf <http://data.linguistik.de/records/1945> ;
+    bf:title [ a bf:CollectiveTitle ;
+            bf:mainTitle "Language typology and syntactic description" ;
+            bf:partNumber "2" ],
+        [ a bf:Title ;
+            bf:mainTitle "Complex constructions" ] .
+
+<http://data.linguistik.de/records/1951#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/1951#Instance> .
+
+<http://data.linguistik.de/records/1951#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "188086978" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1944> ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Hrsg." ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book> ;
+    bf:hasInstance <http://data.linguistik.de/records/1951#Instance> ;
+    bf:partOf <http://data.linguistik.de/records/1945> ;
+    bf:title [ a bf:CollectiveTitle ;
+            bf:mainTitle "Language typology and syntactic description" ;
+            bf:partNumber "3" ],
+        [ a bf:Title ;
+            bf:mainTitle "Grammatical categories and the lexicon" ] .
+
+<http://data.linguistik.de/records/1945#Instance> a bf:Instance,
+        bf:Print ;
+    bf:hasItem <http://data.linguistik.de/records/1945#Item> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "263873310" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1945#Work> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ] ;
+    bf:responsibilityStatement "ed. by Timothy Shopen" .
+
+<http://data.linguistik.de/records/1946#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "VIII, 399 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/1946#Item> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "0-521-25700-X" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "310892868" ],
+        [ a bf:Isbn ;
+            rdf:value "0-521-27659-4" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1946#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Literaturverz. S. 365 - 380" ;
+            bf:noteType "046M" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1985" ] ;
+    bf:seriesEnumeration "1" ;
+    bf:seriesStatement "Language typology and syntactic description" .
+
+<http://data.linguistik.de/records/1947#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "VIII, 317 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/1947#Item> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdf:value "0-521-31898-X" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "310892878" ],
+        [ a bf:Isbn ;
+            rdf:value "0-521-26858-3" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1947#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Literaturverz. S. 287 - 298" ;
+            bf:noteType "046M" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1985" ] ;
+    bf:seriesEnumeration "2" ;
+    bf:seriesStatement "Language typology and syntactic description" .
+
+<http://data.linguistik.de/records/1948#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "IX, 427 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/1948#Item> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "310892891" ],
+        [ a bf:Isbn ;
+            rdf:value "0-521-31899-8" ],
+        [ a bf:Isbn ;
+            rdf:value "0-521-26859-1" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1948#Work> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1985" ] ;
+    bf:seriesEnumeration "3" ;
+    bf:seriesStatement "Language typology and syntactic description" .
+
+<http://data.linguistik.de/records/1949#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "XX, 477 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/1949#Item> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdfs:label "978-0-521-58857-7" ;
+            rdf:value "0-521-58857-X" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "315388754" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1949#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Literaturverz. S. 447 - 469" ;
+            bf:noteType "046M" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2007" ] ;
+    bf:seriesEnumeration "1" ;
+    bf:seriesStatement "Language typology and syntactic description" .
+
+<http://data.linguistik.de/records/1950#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "XXII, 465 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/1950#Item> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "315388862" ],
+        [ a bf:Isbn ;
+            rdfs:label "978-0-521-58856-0" ;
+            rdf:value "0-521-58856-1" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1950#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Literaturverz. S. 421 - 449" ;
+            bf:noteType "046M" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2007" ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ] ;
+    bf:seriesEnumeration "2" ;
+    bf:seriesStatement "Language typology and syntactic description" .
+
+<http://data.linguistik.de/records/1951#Instance> a bf:Instance,
+        bf:Print ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "XXII, 426 S." ] ;
+    bf:hasItem <http://data.linguistik.de/records/1951#Item> ;
+    bf:identifiedBy [ a bf:Isbn ;
+            rdfs:label "978-0-521-58855-3" ;
+            rdf:value "0-521-58855-3" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "315388979" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1951#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Literaturverz. S. 382 - 410" ;
+            bf:noteType "046M" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2007" ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Cambridge Univ. Press" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cambridge {[u.a.]" ] ] ;
+    bf:seriesEnumeration "3" ;
+    bf:seriesStatement "Language typology and syntactic description" .
+
+<http://data.linguistik.de/records/10> a bf:Organization ;
+    rdfs:label "Frankfurt, Bibliographie Linguistischer Literatur" .
+
+<http://data.linguistik.de/records/1944> a bf:Person ;
+    rdfs:label "Shopen, Timothy" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "191215880" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "133516091" ] .
+
