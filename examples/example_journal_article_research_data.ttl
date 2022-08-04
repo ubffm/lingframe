@@ -1,0 +1,360 @@
+# This an example of a research paper that was released in a journal.
+# The paper references a text corpus (BNC) which was used as research data.
+# Records for the paper, the journal as well as the corpus are included in the
+# example, as well as stub records of authorities.
+
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bfle: <http://data.linguistik.de/bll/bibframe-lingframe-extensions#> .
+@prefix bllt: <http://data.linguistik.de/bll/bll-thesaurus#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### The research paper
+<http://data.linguistik.de/records/1939#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2008-07-15"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "202129764" ] ] ;
+    bf:classification <http://data.linguistik.de/records/1923>,
+        <http://data.linguistik.de/records/1924>,
+        <http://data.linguistik.de/records/1925>,
+        <http://data.linguistik.de/records/1926>,
+        <http://data.linguistik.de/records/1927>,
+        <http://data.linguistik.de/records/1928>,
+        <http://data.linguistik.de/records/1929>,
+        <http://data.linguistik.de/records/1930>,
+        <http://data.linguistik.de/records/1931>,
+        <http://data.linguistik.de/records/1932>,
+        <http://data.linguistik.de/records/1940> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1934> ;
+            bf:qualifier "primary" ],
+        [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1933> ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#article> ;
+    bf:hasInstance <http://data.linguistik.de/records/1939#Instance> ;
+    bf:partOf [ a bf:Instance ;
+            bf:extent [ a bf:Extent ;
+                    rdfs:label "283-311" ] ;
+            bf:instanceOf <http://data.linguistik.de/records/1935> ;
+            bf:part "34 2006 4 283-311" ;
+            bf:provisionActivity [ a bf:Publication ;
+                    bf:date "2006" ] ;
+            bf:title [ a bf:Title ;
+                    rdfs:label "Journal of English linguistics. - Thousand Oaks, Calif. {[u.a.] : Sage" ;
+                    sdo:issueNumber "4" ;
+                    sdo:volumeNumber "34" ] ] ;
+    bf:subject [ a bf:Topic ;
+            rdfs:label "n @Textkorpus (engl.) Longman Spoken American Corpus = LSAC"@de ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Tag questions in British and American English" ] .
+
+<http://data.linguistik.de/records/1939#Instance> a bf:Instance,
+        bf:Print ;
+    bf:hasItem <http://data.linguistik.de/records/1939#Item> ;
+    bf:instanceOf <http://data.linguistik.de/records/1939#Work> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "2006" ] ;
+    bf:references [ a bf:Instance ;
+            bf:instanceOf bllt:bll-44698227X ] ;
+    bf:responsibilityStatement "Gunnel Tottie ; Sebastian Hoffmann" .
+
+<http://data.linguistik.de/records/1939#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/10> ;
+    bf:itemOf <http://data.linguistik.de/records/1939#Instance> .
+
+### The journal
+<http://data.linguistik.de/records/1935#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "046844376" ] ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#journal>,
+        <http://data.linguistik.de/records/1938> ;
+    bf:hasInstance <http://data.linguistik.de/records/1935#Instance> ;
+    bf:subject <http://data.linguistik.de/records/1936>,
+        <http://data.linguistik.de/records/1937> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Journal of English linguistics" ;
+            bf:subtitle "JEngL" ] .
+
+<http://data.linguistik.de/records/1935#Instance> a bf:Instance,
+        bf:Print ;
+    bf:hasItem <http://data.linguistik.de/records/1935#Item> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "oclc" ] ;
+            rdf:value "224491994" ],
+        [ a bf:Issn ;
+            bf:qualifier "o" ;
+            rdf:value "1552-5457" ],
+        [ a bf:Local ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "zdb" ] ;
+            rdf:value "3074-0" ],
+        [ a bf:Issn ;
+            rdf:value "0075-4242" ] ;
+    bf:instanceOf <http://data.linguistik.de/records/1935#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "1.1967 - 23.1990/95(1995); 24.1996 -" ;
+            bf:noteType "Ersch." ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1967" ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Sage" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Thousand Oaks, Calif. {[u.a.]" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Dep. of English, Western Washington State Coll." ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Bellingham, Wash." ] ] .
+
+<http://data.linguistik.de/records/1935#Item> a bf:Item ;
+    bf:itemOf <http://data.linguistik.de/records/1935#Instance> .
+
+### The text corpus
+<http://data.linguistik.de/records/1940#Instance> a bf:Electronic,
+        bf:Instance ;
+    bf:hasItem <http://data.linguistik.de/records/1940#Item> ;
+    bf:instanceOf <http://data.linguistik.de/records/1940#Work> .
+
+<http://data.linguistik.de/records/1940#Work> a bf:Dataset,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "44698227X" ] ] ;
+    bf:classification <http://data.linguistik.de/records/1923> ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#series> ;
+    bf:hasInstance <http://data.linguistik.de/records/1940#Instance> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "British National Corpus" ],
+        [ a bf:AbbreviatedTitle ;
+            bf:mainTitle "BNC" ] .
+
+<http://data.linguistik.de/records/1940#Item> a bf:Item ;
+    bf:electronicLocator [ a rdfs:Resource ;
+            rdfs:label "Handle" ;
+            rdf:value <http://hdl.handle.net/11022/0000-0000-2CC2-4> ],
+        [ a rdfs:Resource ;
+            rdfs:label "VLO" ;
+            rdf:value <https://vlo.clarin.eu/record/https_58__47__47_hdl.handle.net_47_11022_47_0000-0000-2CC2-4> ],
+        [ a rdfs:Resource ;
+            rdfs:label "Homepage" ;
+            rdf:value <http://www.natcorp.ox.ac.uk/> ] ;
+    bf:itemOf <http://data.linguistik.de/records/1940#Instance> .
+
+<http://data.linguistik.de/records/1940> a bfle:ClassificationBll ;
+    rdfs:label "British National Corpus"@de ;
+    bf:classificationPortion "03.26.06.005.07.02.0019" .
+
+
+### Authorities
+<http://data.linguistik.de/records/1933> a bf:Person ;
+    rdfs:label "Hoffmann, Sebastian" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "160457084" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "130254681" ] .
+
+<http://data.linguistik.de/records/1934> a bf:Person ;
+    rdfs:label "Tottie, Gunnel" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "374453942" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "1089245130" ] .    
+
+<http://data.linguistik.de/records/1924> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Amerikanisches Englisch"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133070514" ] ] ;
+    bf:classificationPortion "01.01.02.011" .
+
+<http://data.linguistik.de/records/1923> a bfle:ClassificationBll,
+        bf:Classification,
+        bf:Language ;
+    rdfs:label "Britisches Englisch"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133070441" ] ] ;
+    bf:classificationPortion "01.01.02.004" .
+
+<http://data.linguistik.de/records/1925> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Diskursanalyse"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133072355" ] ] ;
+    bf:classificationPortion "03.21.09" ;
+    bf:qualifier "pragm." .
+
+<http://data.linguistik.de/records/1926> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Alter"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133076830" ] ] ;
+    bf:classificationPortion "03.12.03.005" ;
+    bf:qualifier "Sprachverhalten" .
+
+<http://data.linguistik.de/records/1927> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Kontrastive Pragmatik"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133111504" ] ] ;
+    bf:classificationPortion "03.21.12.035" .
+
+<http://data.linguistik.de/records/1928> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Kontrastive Syntax"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133111539" ] ] ;
+    bf:classificationPortion "04.08.19" .
+
+<http://data.linguistik.de/records/1929> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Register"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133120392" ] ] ;
+    bf:classificationPortion "03.12.24" ;
+    bf:qualifier "Soziolinguistik" .
+
+<http://data.linguistik.de/records/1930> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Semantische Polarität"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133122247" ] ] ;
+    bf:classificationPortion "04.10.27" .
+
+<http://data.linguistik.de/records/1931> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Tag question"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133125181" ] ] ;
+    bf:classificationPortion "04.08.06.002.08" .
+
+<http://data.linguistik.de/records/1932> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Vorkommenshäufigkeit"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133128008" ] ] ;
+    bf:classificationPortion "03.25.02.017.11" ;
+    bf:qualifier "synt." .
+
+    <http://data.linguistik.de/records/1936> a bf:Topic ;
+    rdfs:label "Dialektologie"@de .
+
+<http://data.linguistik.de/records/1937> a bf:Topic ;
+    rdfs:label "Datenverarbeitung"@de .
+
+<http://data.linguistik.de/records/1938> a bf:GenreForm ;
+    rdfs:label "Zeitschrift"@de .
+
+<http://data.linguistik.de/records/10> a bf:Organization ;
+    rdfs:label "Bibliographie Linguistischer Literatur",
+        "Frankfurt, Bibliographie Linguistischer Literatur" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "129368261" ] ] .
