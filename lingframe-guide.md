@@ -257,7 +257,7 @@ Text corpora are treated as `bf:Dataset`. For a detailed example, please see the
 
 ### 4.4 References to research data
 
-References to corpora are modelled on `bf:Work` level like
+References to corpora are modelled on `bf:Instance` level like
 this:
 
 ```turtle
