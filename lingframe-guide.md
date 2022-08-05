@@ -20,6 +20,7 @@ differing definitions are given here. If a different definition is given,
 this is done to state combinatoric restrictions with other BIBFRAME elements
 or restrict the values of literals.
 
+
 ## 1. Introduction
 
 As a bibliographic resource for a specific academic discipline rather than
@@ -33,13 +34,16 @@ constitute the majority of the resources indexed into the Linguistik Portal.
 Other features, such as the linking of bibliographic resources to research data,
 are non-standard requirements and call for custom solutions altogether.
 Therefore, the definition of an application profile which captures these
-differences is required.
+differences is required. Both the [Marc2Bibframe2 converter](https://github.com/lcnetdev/marc2bibframe2)
+by the Library of Congress as well as the data model used by [Swepub](https://www.kb.se/samverkan-och-utveckling/swepub.html)
+served as examples and reference points in the development of this 
+application profile
 
 ## 2. Basic structure & principles
 
 Of the three main levels of description offered by BIBFRAME – `bf:Work`, `bf:Instance` and
 `bf:Item` – the data model currently mostly uses `bf:Work` and `bf:Instance` while `bf:Item`
-is only employed to host `bf:ElectronicLocator`.
+is only employed to host `bf:ElectronicLocator` and `bf:heldBy`.
 
 If an element is not mentioned in Section3 "Included Elements", it is not a part of this
 application profile.  If an element is not mentioned in Section 4 "Diverging Definitions", its
@@ -83,9 +87,8 @@ In these cases, they are uniformly set to `de`.
 Datatypes for literals are currently only used with literals that are objects of `bf:creationDate`.
 In these cases, they are unisormly set do `xsd:date`.
 
-
 ## 3. Included Elements
-### 3.1 Classes
+### 3.1. Classes
 * [AbbreviatedTitle](https://id.loc.gov/ontologies/bibframe/AbbreviatedTitle)
 * [AdminMetadata](https://id.loc.gov/ontologies/bibframe/AdminMetadata)
 * [Agent](https://id.loc.gov/ontologies/bibframe/Agent)
@@ -139,6 +142,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [creationDate](https://id.loc.gov/ontologies/bibframe/creationDate)
 * [date](https://id.loc.gov/ontologies/bibframe/date)
 * [degree](https://id.loc.gov/ontologies/bibframe/degree)
+* [descriptionLanguage](https://id.loc.gov/ontologies/bibframe/descriptionLanguage)
 * [dissertation](https://id.loc.gov/ontologies/bibframe/dissertation)
 * [electronicLocator](https://id.loc.gov/ontologies/bibframe/electronicLocator)
 * [extent](https://id.loc.gov/ontologies/bibframe/extent)
@@ -178,7 +182,8 @@ Items that are printed in _italics_ are included provisionally,
 as they are likely to occur in the source data at some point,
 but do not yet.
 
-## BLL subject terms
+## 3. Special cases
+### 3.1. BLL subject terms
 
 In order to use [BLL subject terms](https://data.linguistik.de/bll/bll-ontology),
 the following approach is taken. A subclass `bfle:ClassificationBll` of `bf:Classification` is definied to
@@ -218,4 +223,46 @@ Assignment to a bibliographic record:
 In addition to the aforemetioned classes, BLL terms that represent languages are also
 instances of `bf:Language`. This way, it is possible to use BLL language terms as
 objects of `bf:language` and `bf:descriptionLanguage`.
+
+### 3.2. Article level description
+For the most part, articles are modelled in Lingframe like every other bibliographic record.
+`bf:genreForm <http://data.linguistik.de/lingframe-genreterms#article>` is used to explicitly
+mark articles as such on `bf:Work` level.
+
+Article are linked to their host by using the following approach (inspired by [Swepub](https://www.kb.se/samverkan-och-utveckling/swepub/datamodell/swepub-bibframe.html):
+
+```turtle
+bf:partOf [ a bf:Instance ;
+        bf:extent [ a bf:Extent ;
+                rdfs:label "283-311" ] ;
+        bf:instanceOf <http://data.linguistik.de/records/1935> ;
+        bf:part "34 2006 4 283-311" ;
+        bf:provisionActivity [ a bf:Publication ;
+                bf:date "2006" ] ;
+        bf:title [ a bf:Title ;
+                rdfs:label "Journal of English linguistics. - Thousand Oaks, Calif. {[u.a.] : Sage" ;
+                sdo:issueNumber "4" ;
+                sdo:volumeNumber "34" ] ] ;
+```
+
+### 3.3. Description of text corpora
+
+Text corpora are treated as `bf:Dataset`. For a detailed exampled, please see the examples folder.
+
+
+
+### 3.4 References to research data
+
+References to corpora are modelled on `bf:Work` level like
+this:
+
+```turtle
+bf:references [ a bf:Instance ;
+            bf:instanceOf bllt:bll-44698227X ] ;
+```
+
+If a research paper references a specific version of a text corpus, this can be be stated via `bf:qualifier`
+inside the blank node.
+
+
 
