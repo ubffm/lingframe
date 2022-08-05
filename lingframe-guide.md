@@ -39,6 +39,7 @@ by the Library of Congress as well as the data model used by [Swepub](https://ww
 served as examples and reference points in the development of this 
 application profile
 
+
 ## 2. Basic structure & principles
 
 Of the three main levels of description offered by BIBFRAME – `bf:Work`, `bf:Instance` and
@@ -81,11 +82,13 @@ The current version of the application profile makes extensive use of blank node
 This may change in the future.
 
 ### 2.3. On language tags and datatype for literals
+
 Language tags are at the moment only used with `rdfs:label` for `bf:Topic` and `bf:GenreForm`.
 In these cases, they are uniformly set to `de`.
 
 Datatypes for literals are currently only used with literals that are objects of `bf:creationDate`.
 In these cases, they are unisormly set do `xsd:date`.
+
 
 ## 3. Included Elements
 ### 3.1. Classes
@@ -133,6 +136,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [Work](https://id.loc.gov/ontologies/bibframe/Work)
 
 ### 3.2. Properties
+
 * [adminMetadata](https://id.loc.gov/ontologies/bibframe/adminMetadata)
 * [agent](https://id.loc.gov/ontologies/bibframe/agent)
 * [assigner](https://id.loc.gov/ontologies/bibframe/assigner)
@@ -182,8 +186,8 @@ Items that are printed in _italics_ are included provisionally,
 as they are likely to occur in the source data at some point,
 but do not yet.
 
-## 3. Special cases
-### 3.1. BLL subject terms
+## 4. Special cases
+### 4.1. BLL subject terms
 
 In order to use [BLL subject terms](https://data.linguistik.de/bll/bll-ontology),
 the following approach is taken. A subclass `bfle:ClassificationBll` of `bf:Classification` is definied to
@@ -224,7 +228,8 @@ In addition to the aforemetioned classes, BLL terms that represent languages are
 instances of `bf:Language`. This way, it is possible to use BLL language terms as
 objects of `bf:language` and `bf:descriptionLanguage`.
 
-### 3.2. Article level description
+### 4.2. Article level description
+
 For the most part, articles are modelled in Lingframe like every other bibliographic record.
 `bf:genreForm <http://data.linguistik.de/lingframe-genreterms#article>` is used to explicitly
 mark articles as such on `bf:Work` level.
@@ -245,13 +250,12 @@ bf:partOf [ a bf:Instance ;
                 sdo:volumeNumber "34" ] ] ;
 ```
 
-### 3.3. Description of text corpora
+### 4.3. Description of text corpora
 
-Text corpora are treated as `bf:Dataset`. For a detailed exampled, please see the examples folder.
+Text corpora are treated as `bf:Dataset`. For a detailed example, please see the examples folder.
 
 
-
-### 3.4 References to research data
+### 4.4 References to research data
 
 References to corpora are modelled on `bf:Work` level like
 this:
@@ -263,6 +267,3 @@ bf:references [ a bf:Instance ;
 
 If a research paper references a specific version of a text corpus, this can be be stated via `bf:qualifier`
 inside the blank node.
-
-
-
