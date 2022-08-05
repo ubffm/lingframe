@@ -1,0 +1,188 @@
+# Example of a printed dissertation
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bfle: <http://data.linguistik.de/bll/bibframe-lingframe-extensions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+### Title
+<http://data.linguistik.de/records/1960#Work> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2019-01-31"^^xsd:date ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "437377202" ] ] ;
+    bf:classification <http://data.linguistik.de/records/1953>,
+        <http://data.linguistik.de/records/1954>,
+        <http://data.linguistik.de/records/1955>,
+        <http://data.linguistik.de/records/1956>,
+        <http://data.linguistik.de/records/1957>,
+        <http://data.linguistik.de/records/1959> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://data.linguistik.de/records/1958> ;
+            bf:qualifier "primary" ;
+            bf:role [ a bf:Role ;
+                    rdf:value "Verfasser" ],
+                <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://data.linguistik.de/lingframe-genreterms#book>,
+        <http://data.linguistik.de/records/1952> ;
+    bf:hasInstance <http://data.linguistik.de/records/1960#Instance> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Pronoun referencing by younger and older adults" ] .
+
+<http://data.linguistik.de/records/1960#Instance> a bf:Instance,
+        bf:Print ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "1999" ;
+            bf:degree "Dissertation" ;
+            bf:grantingInstitution [ a bf:Agent ;
+                    rdfs:label "University of Kansas" ] ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "iv, 135 Seiten" ] ;
+    bf:hasItem <http://data.linguistik.de/records/1960#Item> ;
+    bf:instanceOf <http://data.linguistik.de/records/1960#Work> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Diagramme" ;
+            bf:noteType "Ill." ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "UMI" ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Ann Arbor, MI" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1999" ] ;
+    bf:responsibilityStatement "by Ruth Herman" .
+
+<http://data.linguistik.de/records/1960#Item> a bf:Item ;
+    bf:heldBy <http://data.linguistik.de/records/10> ;
+    bf:itemOf <http://data.linguistik.de/records/1960#Instance> .
+
+### Authorities
+<http://data.linguistik.de/records/1958> a bf:Person ;
+    rdfs:label "Herman, Ruth" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "176077596" ] ] .
+
+<http://data.linguistik.de/records/1952> a bf:GenreForm,
+        bf:Topic ;
+    rdfs:label "Hochschulschrift",
+        "Hochschulschrift"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "085338818" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "gnd" ] ;
+            rdf:value "4113937-9" ] .
+
+<http://data.linguistik.de/records/1953> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Alter"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133094243" ] ] ;
+    bf:classificationPortion "03.08.06" ;
+    bf:qualifier "neuroling." .
+
+<http://data.linguistik.de/records/1954> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Fallstudie"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133095347" ] ] ;
+    bf:classificationPortion "03.10.34" ;
+    bf:qualifier "psycholing." .
+
+<http://data.linguistik.de/records/1955> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Pronomen"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133119394" ] ] ;
+    bf:classificationPortion "04.05.04.034" .
+
+<http://data.linguistik.de/records/1956> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Referenz"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133120139" ] ] ;
+    bf:classificationPortion "04.10.03.002" .
+
+<http://data.linguistik.de/records/1957> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Syntactic constraint"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "133125092" ] ] ;
+    bf:classificationPortion "04.08.29" .
+
+<http://data.linguistik.de/records/1959> a bfle:ClassificationBll,
+        bf:Classification ;
+    rdfs:label "Alter"@de ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "348006152" ] ] ;
+    bf:classificationPortion "03.10.02.014" ;
+    bf:qualifier "Sprachproduktion" .
+
+<http://data.linguistik.de/records/10> a bf:Organization ;
+    rdfs:label "Bibliographie Linguistischer Literatur",
+        "Frankfurt, Bibliographie Linguistischer Literatur" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:descriptionLanguage <http://data.linguistik.de/records/2> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "Linguistik-Portal PicaPlus-To-BIBFRAME" ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner [ a bf:Organization ;
+                            rdfs:label "HeBIS" ] ;
+                    rdf:value "129368261" ] ] .
