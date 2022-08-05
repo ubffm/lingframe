@@ -181,7 +181,7 @@ but do not yet.
 ## BLL subject terms
 
 In order to use [BLL subject terms](https://data.linguistik.de/bll/bll-ontology),
-the following approach is used. A subclass `bfle:ClassificationBll` of `bf:Classification` is definied to
+the following approach is taken. A subclass `bfle:ClassificationBll` of `bf:Classification` is definied to
 easily allow using BLL terms with BIBFRAME.
 
 ```turtle
@@ -205,7 +205,7 @@ bllo:BLLConcept        rdfs:subClassOf bfbe:ClassificationBll .
 
 Individuals:
 ```
-_:bll-Ainu a bllt:bll-133092208, bfbe:ClassificationBll .
+_:bll-Ainu a bllt:bll-133092208, bfbe:ClassificationBll, bf:Language .
 ```
 
 Assignment to a bibliographic record:
@@ -214,3 +214,8 @@ Assignment to a bibliographic record:
                                                                      bf:Text;
                                                    bf:classification _:bll-Ainu .
 ```
+
+In addition to the aforemetioned classes, BLL terms that represent languages are also
+instances of `bf:Language`. This way, it is possible to use BLL language terms as
+objects of `bf:language` and `bf:descriptionLanguage`.
+
