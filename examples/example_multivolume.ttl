@@ -246,6 +246,7 @@
 
 <http://data.linguistik.de/records/1949#Instance> a bf:Instance,
         bf:Print ;
+    bf:editionStatement "2. ed." ;
     bf:extent [ a bf:Extent ;
             rdfs:label "XX, 477 S." ] ;
     bf:hasItem <http://data.linguistik.de/records/1949#Item> ;
@@ -301,6 +302,7 @@
 
 <http://data.linguistik.de/records/1950#Instance> a bf:Instance,
         bf:Print ;
+    bf:editionStatement "2. ed." ;
     bf:extent [ a bf:Extent ;
             rdfs:label "XXII, 465 S." ] ;
     bf:hasItem <http://data.linguistik.de/records/1950#Item> ;
@@ -356,6 +358,7 @@
 
 <http://data.linguistik.de/records/1951#Instance> a bf:Instance,
         bf:Print ;
+    bf:editionStatement "2. ed." ;
     bf:extent [ a bf:Extent ;
             rdfs:label "XXII, 426 S." ] ;
     bf:hasItem <http://data.linguistik.de/records/1951#Item> ;

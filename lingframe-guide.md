@@ -148,6 +148,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [degree](https://id.loc.gov/ontologies/bibframe/degree)
 * [descriptionLanguage](https://id.loc.gov/ontologies/bibframe/descriptionLanguage)
 * [dissertation](https://id.loc.gov/ontologies/bibframe/dissertation)
+* [editionStatement](https://id.loc.gov/ontologies/bibframe/editionStatement)
 * [electronicLocator](https://id.loc.gov/ontologies/bibframe/electronicLocator)
 * [extent](https://id.loc.gov/ontologies/bibframe/extent)
 * [generationProcess](https://id.loc.gov/ontologies/bibframe/generationProcess)
