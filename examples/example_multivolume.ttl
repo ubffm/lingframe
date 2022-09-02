@@ -39,6 +39,7 @@
                     rdfs:label "oclc" ] ;
             rdf:value "263873310" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1945#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
             bf:agent [ a bf:Agent ;
@@ -89,6 +90,7 @@
         [ a bf:Isbn ;
             rdf:value "0-521-27659-4" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1946#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 365 - 380" ;
             bf:noteType "046M" ] ;
@@ -148,6 +150,7 @@
         [ a bf:Isbn ;
             rdf:value "0-521-26858-3" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1947#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 287 - 298" ;
             bf:noteType "046M" ] ;
@@ -204,6 +207,7 @@
         [ a bf:Isbn ;
             rdf:value "0-521-26859-1" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1948#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
             bf:agent [ a bf:Agent ;
@@ -258,6 +262,7 @@
                     rdfs:label "oclc" ] ;
             rdf:value "315388754" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1949#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 447 - 469" ;
             bf:noteType "046M" ] ;
@@ -314,6 +319,7 @@
             rdfs:label "978-0-521-58856-0" ;
             rdf:value "0-521-58856-1" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1950#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 421 - 449" ;
             bf:noteType "046M" ] ;
@@ -370,6 +376,7 @@
                     rdfs:label "oclc" ] ;
             rdf:value "315388979" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1951#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 382 - 410" ;
             bf:noteType "046M" ] ;

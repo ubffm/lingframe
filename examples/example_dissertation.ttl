@@ -47,6 +47,7 @@
             rdfs:label "iv, 135 Seiten" ] ;
     bf:hasItem <http://data.linguistik.de/records/1960#Item> ;
     bf:instanceOf <http://data.linguistik.de/records/1960#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Diagramme" ;
             bf:noteType "Ill." ] ;

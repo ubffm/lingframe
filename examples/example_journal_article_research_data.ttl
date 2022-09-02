@@ -1,7 +1,7 @@
 # This an example of a research paper that was released in a journal.
 # The paper references a text corpus (BNC) which was used as research data.
-# Records for the paper, the journal as well as the corpus are included in the
-# example, as well as stub records of authorities.
+# Records for the paper, the journal as well as for the corpus are included in the
+# example, accompanied by records of authorities.
 
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bfle: <http://data.linguistik.de/bll/bibframe-lingframe-extensions#> .
@@ -61,6 +61,7 @@
         bf:Print ;
     bf:hasItem <http://data.linguistik.de/records/1939#Item> ;
     bf:instanceOf <http://data.linguistik.de/records/1939#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
             bf:date "2006" ] ;
@@ -109,6 +110,7 @@
         [ a bf:Issn ;
             rdf:value "0075-4242" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1935#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/serl> ;
     bf:note [ a bf:Note ;
             rdfs:label "1.1967 - 23.1990/95(1995); 24.1996 -" ;
             bf:noteType "Ersch." ] ;

@@ -53,6 +53,7 @@
         [ a bf:Isbn ;
             rdf:value "0-915027-37-2" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1922#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:note [ a bf:Note ;
             rdfs:label "Literaturverz. S. 217 - 229" ;
             bf:noteType "046M" ] ;
@@ -108,6 +109,7 @@
                     rdfs:label "zdb" ] ;
             rdf:value "625760-4s" ] ;
     bf:instanceOf <http://data.linguistik.de/records/1916#Work> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/serl> ;
     bf:note [ a bf:Note ;
             rdfs:label "1.1982 -" ;
             bf:noteType "Ersch." ] ;
