@@ -127,6 +127,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [Publication](https://id.loc.gov/ontologies/bibframe/Publication)
 * [Role](https://id.loc.gov/ontologies/bibframe/Role)
 * [Source](https://id.loc.gov/ontologies/bibframe/Source)
+* [Summary](https://id.loc.gov/ontologies/bibframe/Summary)
 * [SupplementaryContent](https://id.loc.gov/ontologies/bibframe/SupplementaryContent)
 * [Text](https://id.loc.gov/ontologies/bibframe/Text)
 * [Title](https://id.loc.gov/ontologies/bibframe/Title)
@@ -180,6 +181,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [source](https://id.loc.gov/ontologies/bibframe/source)
 * [subject](https://id.loc.gov/ontologies/bibframe/subject)
 * [subtitle](https://id.loc.gov/ontologies/bibframe/subtitle)
+* [summary](https://id.loc.gov/ontologies/bibframe/summary)
 * [supplementaryContent](https://id.loc.gov/ontologies/bibframe/supplementaryContent)
 * [title](https://id.loc.gov/ontologies/bibframe/title)
 
