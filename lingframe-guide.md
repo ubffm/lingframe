@@ -93,6 +93,7 @@ In these cases, they are unisormly set do `xsd:date`.
 ## 3. Included Elements
 ### 3.1. Classes
 * [AbbreviatedTitle](https://id.loc.gov/ontologies/bibframe/AbbreviatedTitle)
+* [AccessPolicy](https://id.loc.gov/ontologies/bibframe/AccessPolicy)
 * [AdminMetadata](https://id.loc.gov/ontologies/bibframe/AdminMetadata)
 * [Agent](https://id.loc.gov/ontologies/bibframe/Agent)
 * [Audio](https://id.loc.gov/ontologies/bibframe/Audio)
@@ -184,6 +185,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [summary](https://id.loc.gov/ontologies/bibframe/summary)
 * [supplementaryContent](https://id.loc.gov/ontologies/bibframe/supplementaryContent)
 * [title](https://id.loc.gov/ontologies/bibframe/title)
+* [usageAndAccessPolicy](https://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy)
 
 Items that are printed in _italics_ are included provisionally,
 as they are likely to occur in the source data at some point,
