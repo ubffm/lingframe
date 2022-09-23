@@ -37,7 +37,7 @@ Therefore, the definition of an application profile which captures these
 differences is required. Both the [Marc2Bibframe2 converter](https://github.com/lcnetdev/marc2bibframe2)
 by the Library of Congress as well as the data model used by [Swepub](https://www.kb.se/samverkan-och-utveckling/swepub.html)
 served as examples and reference points in the development of this 
-application profile
+application profile.
 
 
 ## 2. Basic structure & principles
@@ -46,7 +46,7 @@ Of the three main levels of description offered by BIBFRAME – `bf:Work`, `bf:I
 `bf:Item` – the data model currently mostly uses `bf:Work` and `bf:Instance` while `bf:Item`
 is only employed to host `bf:ElectronicLocator` and `bf:heldBy`.
 
-If an element is not mentioned in Section3 "Included Elements", it is not a part of this
+If an element is not mentioned in Section 3 "Included Elements", it is not a part of this
 application profile.  If an element is not mentioned in Section 4 "Diverging Definitions", its
 original definition holds.
 
@@ -239,7 +239,7 @@ For the most part, articles are modelled in Lingframe like every other bibliogra
 `bf:genreForm <http://data.linguistik.de/lingframe-genreterms#article>` is used to explicitly
 mark articles as such on `bf:Work` level.
 
-Article are linked to their host by using the following approach (inspired by [Swepub](https://www.kb.se/samverkan-och-utveckling/swepub/datamodell/swepub-bibframe.html):
+Articles are linked to their host by using the following approach (inspired by [Swepub](https://www.kb.se/samverkan-och-utveckling/swepub/datamodell/swepub-bibframe.html)):
 
 ```turtle
 bf:partOf [ a bf:Instance ;
