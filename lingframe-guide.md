@@ -184,6 +184,7 @@ In these cases, they are unisormly set do `xsd:date`.
 * [subtitle](https://id.loc.gov/ontologies/bibframe/subtitle)
 * [summary](https://id.loc.gov/ontologies/bibframe/summary)
 * [supplementaryContent](https://id.loc.gov/ontologies/bibframe/supplementaryContent)
+* [temporalCoverage](https://id.loc.gov/ontologies/bibframe/temporalCoverage)
 * [title](https://id.loc.gov/ontologies/bibframe/title)
 * [usageAndAccessPolicy](https://id.loc.gov/ontologies/bibframe/usageAndAccessPolicy)
 
